@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim Hoạt Hình Dành Cho Trẻ Em</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header (Cố định ở trên cùng) -->
+    <header class="main-header">
+        <div class="logo">
+            <h2>🎬 HoạtHìnhKids</h2>
+        </div>
+        <nav class="head-link">
+            <a href="#">Trang chủ</a>
+            <a href="#">Mới cập nhật</a>
+            <a href="#">Xem nhiều nhất</a>
+            <a href="#">Thể loại</a>
+        </nav>
+    </header>
+
+    <!-- 2. Main Content Container -->
+    <div class="container">
+        
+        <!-- Left Content: Danh sách video (Menu) -->
+        <aside class="left-content">
+            <h3>Danh Sách Phim</h3>
+            <ul class="video-list">
+                <li class="active">
+                    <a href="#video1">
+                        <strong>1. Doraemon Thuyết Minh</strong>
+                        <span>Full HD 1080p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video2">
+                        <strong>2. Tom & Jerry Cổ Điển</strong>
+                        <span>HD 720p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video3">
+                        <strong>3. Conan Thám Tử Lừng Danh</strong>
+                        <span>Full HD 1080p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video4">
+                        <strong>4. Shin - Cậu Bé Bút Chì</strong>
+                        <span>HD 720p</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Right Content: Khu vực xem video chính -->
+        <main class="right-content">
+            <h2>Đang phát: Doraemon - Tập Đặc Biệt</h2>
+            
+            <!-- Nhúng Video từ YouTube bằng iframe -->
+            <div class="video-player">
+                <iframe 
+                    width="100%" 
+                    height="450" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Video thứ 2 sử dụng thẻ <video> nội bộ -->
+            <div class="local-video-section">
+                <h3>Video mẫu phát bằng thẻ &lt;video&gt;</h3>
+                <video controls width="100%">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+
+            <div class="video-description">
+                <h3>Mô tả phim</h3>
+                <p>Nội dung phim hoạt hình giáo dục hữu ích, chọn lọc kỹ lưỡng, phù hợp lứa tuổi trẻ em và hoàn toàn không chứa quảng cáo gây phiền phức.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 3. Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Website Phim Hoạt Hình Trẻ Em. Bản quyền thuộc về HoạtHìnhKids.</p>
+    </footer>
+
+</body>
+</html>
